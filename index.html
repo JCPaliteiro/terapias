@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:url" content="https://terapias.joaopaliteiro.com/">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Terapias de João Carlos Paliteiro</title>
+<meta name="description" content="Sessões individuais de Cura Divina com João Carlos Paliteiro – Canal da Luz Divina: Divine Presence Healing®, sessões temáticas, Família de Luz, crianças, adolescentes, casal, empresas, espaços e animais.">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Terapias · João Carlos Paliteiro">
+<meta property="og:description" content="Sessões individuais de Cura Divina: para ti, para a tua família e para o teu mundo.">
+<meta name="theme-color" content="#2E2454">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@500;600&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Layout: o mesmo esqueleto das landings recentes (creme, cartões brancos, cabeçalhos centrados), em versão catálogo:
+   uma página com âncora por terapia (#dph, #familia-de-luz...), para enviar a quem pede informação.
+   Cores da marca pessoal (azul-céu, sálvia, lilás, dourado), distintas do índigo da BEYOND. Single look por escolha. */
+:root{
+  --cream:#FBF6EC; --cream-deep:#F3EAD3; --card:#FFFFFF;
+  --ink:#2A2018; --ink-soft:#5f5446;
+  --indigo:#2E2454; --indigo-soft:#4A3B7A;
+  --gold:#C9A063; --gold-deep:#8a6a2f;
+  --sky:#5E93A0; --sage:#7DA06C; --lilac:#A98FBF; --rose:#c97f84;
+  --line:#E6D9BE; --night:#2E2454; --night-ink:#f2eefb;
+  --shadow:0 16px 40px rgba(120,90,40,.12);
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --caps:"Cinzel",Georgia,serif;
+  --sans:"Jost","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.65;background-color:var(--cream);
+  background-image:
+    radial-gradient(ellipse 900px 520px at 10% -8%, rgba(94,147,160,.12), transparent 60%),
+    radial-gradient(ellipse 800px 600px at 100% 12%, rgba(169,143,191,.12), transparent 55%),
+    radial-gradient(ellipse 1000px 700px at 50% 115%, rgba(125,160,108,.12), transparent 60%),
+    linear-gradient(180deg,var(--cream),#FEFCF6 30%,var(--cream) 70%,var(--cream-deep));}
+.wrap{max-width:920px;margin:0 auto;padding-left:max(22px, env(safe-area-inset-left, 0px));padding-right:max(22px, env(safe-area-inset-right, 0px));padding-block:30px 40px}
+a{color:var(--indigo)}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+.eyebrow{font-family:var(--caps);font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);display:flex;align-items:center;justify-content:center;gap:10px;text-align:center}
+.eyebrow::before,.eyebrow::after{content:"";width:28px;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.eyebrow::after{background:linear-gradient(90deg,var(--gold),transparent)}
+
+.hero{text-align:center;padding-top:10px}
+.mark{font-family:var(--caps);font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--indigo)}
+.mark span{display:block;font-family:var(--serif);font-style:italic;text-transform:none;letter-spacing:0;font-size:1.15rem;color:var(--gold-deep);margin-top:2px}
+h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(2.8rem,8vw,4.6rem);line-height:1.04;margin:26px 0 0;
+  background:linear-gradient(100deg,var(--indigo) 10%,#4f7f8b 45%,#7b6699 75%,var(--gold-deep) 95%);-webkit-background-clip:text;background-clip:text;color:transparent;text-wrap:balance}
+.subtitle{font-family:var(--serif);font-size:clamp(1.3rem,3.6vw,1.7rem);line-height:1.35;color:var(--ink-soft);margin:14px auto 0;max-width:34ch;text-wrap:balance}
+.quote{font-family:var(--serif);font-style:italic;font-size:1.35rem;color:var(--indigo);margin:20px auto 0;max-width:36ch}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:26px}
+.chips a{font-size:15px;text-decoration:none;color:var(--indigo);background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:999px;padding:7px 15px}
+.chips a.new{border-color:var(--rose);color:#9b4f56}
+
+section{margin-top:60px;scroll-margin-top:16px}
+.section-head{text-align:center;margin-bottom:24px}
+.section-head .eyebrow{margin-bottom:10px}
+h2{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(1.7rem,4.4vw,2.3rem);line-height:1.2;text-align:center;margin:0;color:var(--indigo);text-wrap:balance}
+.lead{max-width:640px;margin:10px auto 0;text-align:center;color:var(--ink-soft)}
+
+/* Terapia: cartão com faixa de cor, preço à direita */
+.list{display:grid;gap:18px}
+.t{display:grid;grid-template-columns:1fr 230px;gap:24px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px clamp(20px,3.5vw,32px);box-shadow:var(--shadow);border-left:5px solid var(--c,var(--gold));scroll-margin-top:16px}
+.t>div{min-width:0}
+.t h3{font-family:var(--serif);font-size:1.75rem;font-weight:600;color:var(--indigo);margin:0;line-height:1.2;text-wrap:balance}
+.t .kind{font-family:var(--caps);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:6px}
+.t .new{display:inline-block;font-family:var(--caps);font-size:11.5px;letter-spacing:.14em;color:#fff;background:var(--rose);border-radius:999px;padding:3px 10px;margin-left:8px;vertical-align:middle}
+.t q{display:block;font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--c,var(--indigo));margin:8px 0 10px;quotes:none}
+.t p{margin:0 0 10px;color:var(--ink-soft);font-size:16.5px}
+.t ul{margin:6px 0 0;padding-left:18px;color:var(--ink-soft);font-size:16px}
+.t li{margin-bottom:4px}
+.t .chancela{font-size:15px;color:var(--ink-soft);margin-top:10px}
+.t .chancela b{color:var(--indigo);font-weight:500}
+.price{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:16px;text-align:center;align-self:start}
+.price .row{display:flex;justify-content:space-between;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px dashed var(--line);font-size:15px;color:var(--ink-soft)}
+.price .row:last-of-type{border-bottom:0}
+.price .row b{font-family:var(--serif);font-style:italic;font-size:1.5rem;font-weight:500;color:var(--indigo);font-variant-numeric:tabular-nums;white-space:nowrap}
+.price .dur{font-size:14.5px;color:var(--gold-deep);margin-top:6px}
+.book{display:inline-block;margin-top:12px;font-family:var(--sans);font-size:15.5px;font-weight:600;color:#FFFDF7;background:linear-gradient(100deg,var(--indigo-soft),var(--indigo));padding:11px 22px;border-radius:999px;text-decoration:none;box-shadow:0 8px 22px rgba(46,36,84,.22)}
+.more{display:block;margin-top:8px;font-size:15px}
+@media (max-width:700px){.t{grid-template-columns:1fr}}
+.c-sky{--c:#4f7f8b}.c-sage{--c:#5f8a50}.c-lilac{--c:#7b6699}.c-rose{--c:#a85c63}.c-gold{--c:var(--gold-deep)}
+
+.how{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.how>div{min-width:0;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:var(--shadow)}
+.how h3{font-family:var(--caps);font-size:15px;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo);margin:0 0 8px}
+.how p{margin:0;color:var(--ink-soft);font-size:16.5px}
+@media (max-width:640px){.how{grid-template-columns:1fr}}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+.modes>div{min-width:0;background:var(--cream-deep);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+.modes h3{font-family:var(--serif);font-size:1.4rem;font-weight:600;color:var(--indigo);margin:0 0 6px}
+.modes p{margin:0;color:var(--ink-soft);font-size:16.5px}
+@media (max-width:640px){.modes{grid-template-columns:1fr}}
+.offer{margin-top:18px;text-align:center;background:var(--night);color:var(--night-ink);border-radius:18px;padding:22px clamp(18px,4vw,32px)}
+.offer b{color:#f6e2b5}
+
+details{border-top:1px solid var(--line);padding-block:16px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.35rem;color:var(--indigo);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--gold-deep)}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--ink-soft)}
+
+.cta{text-align:center;background:var(--cream-deep);border:1px solid #E4C98A;border-radius:22px;padding:40px clamp(20px,5vw,52px);box-shadow:var(--shadow)}
+.btn{display:inline-block;margin-top:14px;font-family:var(--sans);font-size:17px;font-weight:600;color:#FFFDF7;background:linear-gradient(100deg,var(--indigo-soft),var(--indigo));padding:15px 30px;border-radius:999px;text-decoration:none;box-shadow:0 8px 22px rgba(46,36,84,.25)}
+footer{margin-top:60px;text-align:center;padding-top:30px;border-top:1px solid var(--line)}
+footer .sig{font-family:var(--serif);font-style:italic;font-size:1.45rem;color:var(--gold-deep)}
+footer .meta{margin:10px auto 0;font-size:15px;color:var(--ink-soft);max-width:600px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="mark">João Carlos Paliteiro<span>Canal da Luz Divina</span></div>
+    <h1>Sessões de Cura Divina</h1>
+    <p class="subtitle">Sessões individuais para ti, para a tua família e para o teu mundo. Online, ao vivo pelo Zoom, ou à distância.</p>
+    <p class="quote">A tua vida muda quando o teu Campo muda.</p>
+    <nav class="chips" aria-label="Terapias">
+      <a href="#dph">Divine Presence Healing®</a>
+      <a href="#mae">Relação com a Mãe</a>
+      <a class="new" href="#pai">Relação com o Pai · nova</a>
+      <a href="#crianca-interior">Criança Interior</a>
+      <a href="#luto">Superando o Luto</a>
+      <a class="new" href="#familia-de-luz">Família de Luz · nova</a>
+      <a href="#adolescentes">Adolescentes</a>
+      <a href="#divine-child">Crianças</a>
+      <a href="#casal">Casal</a>
+      <a href="#love-connection">Divine Love Connection</a>
+      <a href="#empresas">Empresas</a>
+      <a href="#espacos">Espaços</a>
+      <a href="#divine-pet">Animais</a>
+    </nav>
+  </header>
+
+  <section id="como">
+    <div class="section-head">
+      <div class="eyebrow">Como funciona</div>
+      <h2>Cada sessão é única</h2>
+      <p class="lead">Todas as sessões nascem do sistema Divine Presence Healing®, que criei ao longo de mais de 22 anos e mais de 16.000 atendimentos. São guiadas pelos Mestres da Luz e pelos teus Guias, e focam-se no que é prioritário para ti nesse momento.</p>
+    </div>
+    <div class="how">
+      <div><h3>Orientação Guiada Intuitiva</h3><p>Uma conversa inspirada pelos Mestres sobre o teu propósito, os teus desejos e os teus bloqueios, para encontrarmos soluções e formas de as aplicar no dia a dia.</p></div>
+      <div><h3>Canalização da Luz e da Cura</h3><p>Um momento meditativo de contacto com o teu Ser Interior, onde a Cura acontece. No fim, explico-te o que foi feito e o que recebi para ti do Plano Espiritual.</p></div>
+    </div>
+    <div class="modes">
+      <div><h3>Ao vivo · pelo Zoom</h3><p>Estamos juntos, em direto, numa videochamada pelo Zoom. Sentes a sessão a acontecer, conversamos no início e no fim, e podes fazer as tuas perguntas.</p></div>
+      <div><h3>À distância</h3><p>Faço a sessão por ti sem estarmos em chamada, no dia combinado. Depois envio-te o que foi feito e o que recebi para ti. Ideal também para sessões para outra pessoa ou para um animal.</p></div>
+    </div>
+    <div class="offer">Primeira sessão de Divine Presence Healing® com <b>20% de desconto</b>. Há pacotes de sessões para quem quer fazer um caminho.</div>
+  </section>
+
+  <section id="para-ti">
+    <div class="section-head">
+      <div class="eyebrow">Para ti</div>
+      <h2>Cura, orientação e ascensão</h2>
+    </div>
+    <div class="list">
+
+      <article class="t c-sky" id="dph">
+        <div>
+          <div class="kind">Sessão individual · a sessão geral</div>
+          <h3>Divine Presence Healing®</h3>
+          <q>Uma terapia espiritual de acesso intuitivo à tua divindade, que catalisa a tua conexão com Deus.</q>
+          <p>O Divine Presence Healing® combina várias técnicas que desenvolvi e aprendi ao longo da minha vida para integrar as diferentes partes do teu Ser e te alinhar com o teu plano evolutivo, orientado pela Presença Divina EU SOU. Cada sessão é personalizada e guiada pelos Seres de Luz e pelos teus Guias, com foco nos temas mais prioritários para ti nesse momento: espirituais, energéticos, mentais, emocionais e físicos.</p>
+          <p>Pode ser uma sessão única ou um caminho de várias sessões focadas num tema ou objetivo, como um coaching divino. Quanto mais sessões, mais fácil se torna encontrar soluções permanentes. Traz paz, harmonia, clareza e empoderamento, e ajuda a encontrar respostas para as tuas questões mais profundas. A tua cura também influencia positivamente quem está à tua volta.</p>
+          <ul>
+            <li>Padrões de limitação, medo, dúvida e escassez</li>
+            <li>Ativação de frequências de luz: harmonia, paz, amor, alegria, fé e esperança</li>
+            <li>Despertar espiritual e ligação ao Eu Superior</li>
+            <li>Limpezas e libertações: resgate da alma, desobsessão, limpeza de magias e de implantes dimensionais</li>
+            <li>Vidas passadas, ciclos cármicos, quebra de contratos e votos</li>
+            <li>Cirurgias espirituais e regeneração das estruturas multidimensionais</li>
+            <li>Autoestima, autoconfiança, perdão e relações</li>
+            <li>Propósito Divino e alinhamento com a abundância</li>
+            <li>Alinhamento e limpeza de chakras e aura</li>
+            <li>Harmonização energética do corpo, dos órgãos e dos sistemas nervoso, endócrino e imunitário, como complemento ao acompanhamento médico</li>
+            <li>Rejuvenescimento quântico e ativações do DNA</li>
+          </ul>
+          <p class="chancela">Também pode ser feita para outra pessoa, mesmo sem ela saber: a Cura acontece noutras dimensões.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Sessão · Zoom</span><b>150€</b></div>
+          <div class="row"><span>1.ª sessão</span><b>120€</b></div>
+          <div class="dur">cerca de 1h30 · pacotes de sessões disponíveis</div>
+          <a class="book" data-s="Divine Presence Healing®" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-rose" id="mae">
+        <div>
+          <div class="kind">Sessão temática DPH</div>
+          <h3>Curando a Relação com a Mãe</h3>
+          <q>Todo o trabalho que fizeres para curar a tua relação com a tua mãe traduz-se numa aproximação à Mãe Divina!</q>
+          <p>Um trabalho interior de cura e limpeza espirituais que liberta laços e carmas com a tua mãe e com as tuas ancestrais, para transformar a egrégora familiar e abrir portais e caminhos de Luz. Os seus frutos sentem-se na saúde, nas relações, na abundância, na evolução espiritual e na autoestima.</p>
+          <ul>
+            <li>A relação com a tua mãe interna e com a Mãe Cósmica</li>
+            <li>A relação com a tua própria mãe</li>
+            <li>A relação da tua mãe com a mãe dela</li>
+            <li>A linhagem ancestral feminina: as relações entre mães ao longo das gerações</li>
+            <li>A tua relação com os teus filhos</li>
+            <li>A tua relação com a Mãe Terra</li>
+          </ul>
+          <p class="chancela">Chancela: <b>Mãe Maria</b>, que assegura a mentoria, a proteção e a cura, com outros Seres de Luz, Anjos e Arcanjos.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Ao vivo · Zoom</span><b>100€</b></div>
+          <div class="row"><span>À distância</span><b>70€</b></div>
+          <div class="row"><span>5 ao vivo · Zoom</span><b>400€</b></div>
+          <div class="row"><span>5 à distância</span><b>280€</b></div>
+          <div class="dur">até 1 hora</div>
+          <a class="book" data-s="Curando a Relação com a Mãe" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-sky" id="pai">
+        <div>
+          <div class="kind">Sessão temática DPH <span class="new">NOVA</span></div>
+          <h3>Curando a Relação com o Pai</h3>
+          <q>Todo o trabalho que fizeres para curar a tua relação com o teu pai traduz-se numa aproximação ao Pai Divino!</q>
+          <p>Liberta laços e carmas com o teu pai e com os teus ancestrais, para transformar a egrégora familiar e abrir caminhos de Luz. Transforma a tua força, a tua direção, o teu lugar no mundo e a tua relação com a autoridade e com a abundância.</p>
+          <ul>
+            <li>A relação com o teu pai, o pai interno e o Pai Divino</li>
+            <li>A relação do teu pai com o pai dele</li>
+            <li>A linhagem ancestral masculina ao longo das gerações</li>
+            <li>A relação com os teus filhos e com o Céu</li>
+          </ul>
+          <p class="chancela">Chancela: <b>Mestre Saint Germain (São José)</b>, com outros Seres de Luz, Anjos e Arcanjos.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Ao vivo · Zoom</span><b>100€</b></div>
+          <div class="row"><span>À distância</span><b>70€</b></div>
+          <div class="row"><span>5 ao vivo · Zoom</span><b>400€</b></div>
+          <div class="row"><span>5 à distância</span><b>280€</b></div>
+          <div class="dur">até 1 hora</div>
+          <a class="book" data-s="Curando a Relação com o Pai" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-lilac" id="crianca-interior">
+        <div>
+          <div class="kind">Sessão temática DPH</div>
+          <h3>Curando a Relação com a Criança Interior</h3>
+          <q>A Cura total da tua relação com a Criança dentro de ti representa a tua total Iluminação Espiritual!</q>
+          <p>Um trabalho profundo de cura e limpeza espirituais que liberta contratos e carmas nas relações com todos os seres e, sobretudo, contigo. A tua Criança Interior é o embrião do Cristo dentro de ti. Estas curas tocam a egrégora familiar, abrem portais e caminhos de Luz e refletem-se na saúde, nas relações, na abundância, na evolução espiritual, na liderança e na autoestima.</p>
+          <ul>
+            <li>A tua relação com a tua Criança Interior e com a Divina Presença</li>
+            <li>A relação dos teus familiares e antepassados com as suas Crianças Interiores</li>
+            <li>A tua relação com a Criança Interior dos teus filhos</li>
+            <li>A tua relação com a Criança Interior dos teus pais</li>
+          </ul>
+          <p class="chancela">Chancela: <b>Mestre Sananda Jesus</b>, que assegura a mentoria, a proteção e a cura, com outros Seres de Luz, Anjos e Arcanjos.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Ao vivo · Zoom</span><b>100€</b></div>
+          <div class="row"><span>À distância</span><b>70€</b></div>
+          <div class="row"><span>5 ao vivo · Zoom</span><b>400€</b></div>
+          <div class="row"><span>5 à distância</span><b>280€</b></div>
+          <div class="dur">até 1 hora</div>
+          <a class="book" data-s="Curando a Relação com a Criança Interior" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-sky" id="luto">
+        <div>
+          <div class="kind">Sessão temática DPH</div>
+          <h3>Superando o Luto</h3>
+          <q>O Luto é uma oportunidade de ouro para o teu verdadeiro Crescimento Espiritual.</q>
+          <p>Para ti ou para alguém que atravessa uma perda, recente ou antiga: de alguém ou de algo, nesta dimensão ou noutra. Cuidamos da dor, do que ficou por dizer e da culpa de quem fica, para que o amor continue de outra forma e quem partiu siga o seu Caminho na Luz.</p>
+          <p class="chancela">Chancela: <b>Mestres Saint Germain, Pórtia, Maria, Sananda e Nada</b> e <b>Arcanjo Uriel</b>, com outros Seres de Luz, Anjos e Arcanjos.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Ao vivo · Zoom</span><b>100€</b></div>
+          <div class="row"><span>À distância</span><b>70€</b></div>
+          <div class="row"><span>5 ao vivo · Zoom</span><b>400€</b></div>
+          <div class="row"><span>5 à distância</span><b>280€</b></div>
+          <div class="dur">até 1 hora</div>
+          <a class="book" data-s="Superando o Luto" href="#">Marcar sessão</a>
+          <a class="more" href="https://jcpaliteiro.github.io/superando-o-luto/" target="_blank" rel="noopener">Ver a página da sessão</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="para-a-familia">
+    <div class="section-head">
+      <div class="eyebrow">Para a tua família</div>
+      <h2>Pais, filhos, casal e linhagem</h2>
+    </div>
+    <div class="list">
+
+      <article class="t c-rose" id="familia-de-luz">
+        <div>
+          <div class="kind">Sessão para a família <span class="new">NOVA</span></div>
+          <h3>Família de Luz</h3>
+          <q>Nós somos uma família. A partir de ti, nasce uma nova linhagem.</q>
+          <p>Uma sessão individual de 2 horas para toda a tua família, a que está aqui e a que já partiu. Curamos a linhagem, os contratos e os laços, os padrões, crenças e programações, matrizes energéticas e muito mais, para que a Ordem Divina volte à tua casa e às tuas relações.</p>
+          <ul>
+            <li>Pais, filhos, irmãos, avós e antepassados</li>
+            <li>Os que partiram e o que ficou por dizer</li>
+            <li>Padrões que se repetem de geração em geração</li>
+            <li>Libertação e ascensão de antepassados</li>
+            <li>Bênção das gerações futuras</li>
+          </ul>
+          <p class="chancela">Na mesma linha do Curso NÓS SOMOS · Linhagem Divina. Alunos do Curso: 50% com o vale-bónus.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Sessão · Zoom</span><b>222€</b></div>
+          <div class="dur">até 2 horas · para toda a família</div>
+          <a class="book" data-s="Família de Luz" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-sage" id="adolescentes">
+        <div>
+          <div class="kind">Sessão DPH · 13 aos 17 anos</div>
+          <h3>Divine Presence Healing® para Adolescentes</h3>
+          <p>Uma sessão de Divine Presence Healing® adaptada a esta fase da vida, tão intensa e tão sensível. Ajuda o adolescente a sentir-se mais protegido, mais seguro e mais ligado a quem é e ao seu propósito, e a atravessar com mais leveza os desafios da escola, dos amigos e das emoções.</p>
+          <ul>
+            <li>Proteção espiritual e propósito de vida</li>
+            <li>Rendimento escolar, foco e concentração</li>
+            <li>Cura de situações de bullying, passadas ou presentes</li>
+            <li>Dificuldades emocionais, autoestima e confiança</li>
+            <li>A relação com os pais e com a família</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="row"><span>Sessão · Zoom</span><b>100€</b></div>
+          <div class="dur">até 1h15</div>
+          <a class="book" data-s="Divine Presence Healing para Adolescentes" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-sage" id="divine-child">
+        <div>
+          <div class="kind">Sessão DPH · até aos 12 anos</div>
+          <h3>Divine Child</h3>
+          <p>Cura e proteção espirituais para as crianças, com os temas do Divine Presence Healing® adaptados à sua idade. Ajuda a criança a sentir-se segura, protegida e em paz, e fortalece a relação entre pais e filhos.</p>
+          <ul>
+            <li>Proteção espiritual e propósito da criança</li>
+            <li>Medos, sono, emoções e adaptação à escola</li>
+            <li>Fortalecimento da relação entre pais e filhos</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="row"><span>Sessão · Zoom</span><b>75€</b></div>
+          <div class="dur">até 60 minutos</div>
+          <a class="book" data-s="Divine Child" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-lilac" id="casal">
+        <div>
+          <div class="kind">Sessão para o casal</div>
+          <h3>Sessão de Casal</h3>
+          <q>Duas metades não fazem um inteiro. Dois inteiros fazem uma união.</q>
+          <p>Uma sessão de 2 horas com os dois, para curar e alinhar a relação na Presença Divina. Trabalhamos os padrões, as mágoas, os contratos e as heranças que cada um traz das suas famílias e de outras vidas, e abrimos caminho a uma união mais consciente, mais livre e mais amorosa.</p>
+          <ul>
+            <li>Comunicação, confiança e perdão</li>
+            <li>Padrões e feridas que se repetem na relação</li>
+            <li>Laços e contratos de outras vidas</li>
+            <li>As famílias de cada um dentro do casal</li>
+            <li>Propósito comum e bênção da união</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="row"><span>Sessão · Zoom</span><b>200€</b></div>
+          <div class="dur">até 2 horas · os dois juntos</div>
+          <a class="book" data-s="Sessão de Casal" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-lilac" id="love-connection">
+        <div>
+          <div class="kind">Sessão individual ou a dois</div>
+          <h3>Divine Love Connection</h3>
+          <q>Somos essencialmente Amor Divino.</q>
+          <p>Um trabalho espiritual e energético de grande alcance vibracional que aprofunda a tua ligação à Fonte Suprema da Vida em todas as dimensões do teu Ser. Memórias conscientes e inconscientes de muitas vidas impedem-nos de viver o amor de forma plena. Nesta sessão curamos padrões, mágoas, ressentimentos e crenças erradas sobre o amor, e compreendemos o que vives no dia a dia.</p>
+          <ul>
+            <li>Para quem quer reinventar-se com amor ou sente falta de amor na vida</li>
+            <li>Relações de casal, de família, de amizade e com a vida</li>
+            <li>Aprender a amar de verdade e sanar o passado com perdão</li>
+            <li>Abrir caminho a novas relações, de amor, amizade ou trabalho</li>
+            <li>Sessão a dois para um casal, ou para sanar a relação com alguém</li>
+          </ul>
+          <p class="chancela">Inspirada na energia do <b>Arcanjo Chamuel</b>, guiada pelos teus Mestres, Guias de Luz e Anjos.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Individual · Zoom</span><b>125€</b></div>
+          <div class="row"><span>Casal ou 2 pessoas</span><b>200€</b></div>
+          <div class="dur">até 1h15 · a dois até 2h</div>
+          <a class="book" data-s="Divine Love Connection" href="#">Marcar sessão</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="para-o-teu-mundo">
+    <div class="section-head">
+      <div class="eyebrow">Para o teu mundo</div>
+      <h2>Projetos, lugares e animais</h2>
+    </div>
+    <div class="list">
+
+      <article class="t c-gold" id="empresas">
+        <div>
+          <div class="kind">Sessão para projetos</div>
+          <h3>Cura de Empresas e Negócios</h3>
+          <p>Harmoniza projetos, equipas e processos, da ideia à execução, para que o teu trabalho flua alinhado com a Vontade Divina. Trabalhamos o Campo do projeto, os bloqueios, os contratos e as energias que travam a sua expansão, e abrimos caminhos à Providência.</p>
+          <ul>
+            <li>Empresas, negócios, projetos e lançamentos</li>
+            <li>Equipas, sócios, clientes e parcerias</li>
+            <li>Bloqueios financeiros e de crescimento</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="row"><span>Sessão · Zoom</span><b>200€</b></div>
+          <div class="dur">até 2 horas</div>
+          <a class="book" data-s="Cura de Empresas e Negócios" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-gold" id="espacos">
+        <div>
+          <div class="kind">Sessão para lugares</div>
+          <h3>Cura de Espaços</h3>
+          <p>Para casas, terrenos e outros lugares onde vives ou trabalhas. Limpamos e harmonizamos o Campo do espaço, libertamos memórias e energias que lá ficaram e criamos um campo de proteção, para que o lugar volte a ser fonte de paz, de saúde e de prosperidade.</p>
+        </div>
+        <div class="price">
+          <div class="row"><span>Sessão · Zoom</span><b>175€</b></div>
+          <div class="dur">até 1h45</div>
+          <a class="book" data-s="Cura de Espaços" href="#">Marcar sessão</a>
+        </div>
+      </article>
+
+      <article class="t c-sage" id="divine-pet">
+        <div>
+          <div class="kind">Sessão para animais</div>
+          <h3>Divine Pet</h3>
+          <p>Sessões de cura espiritual baseadas no Divine Presence Healing® para animais de estimação e de companhia, para que vivam uma vida mais saudável, feliz e livre e manifestem a missão que vieram cumprir na Terra. Para todas as fases da vida, incluindo o acompanhamento no fim da vida.</p>
+          <ul>
+            <li>Mais proteção espiritual e um campo de proteção durante a vida do animal</li>
+            <li>A missão de Luz do animal e o propósito da sua presença na tua vida</li>
+            <li>Cura do animal, da relação com o tutor e do ambiente da casa</li>
+            <li>Resgate e cura da alma do animal e do tutor</li>
+            <li>Ligação aos mentores espirituais do animal</li>
+            <li>Cura de traumas e de situações do passado</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="row"><span>Ao vivo · Zoom</span><b>75€</b></div>
+          <div class="row"><span>À distância</span><b>55€</b></div>
+          <div class="row"><span>5 ao vivo · Zoom</span><b>300€</b></div>
+          <div class="row"><span>5 à distância</span><b>220€</b></div>
+          <div class="dur">até 1h15</div>
+          <a class="book" data-s="Divine Pet" href="#">Marcar sessão</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="perguntas">
+    <div class="section-head"><h2>Perguntas frequentes</h2></div>
+    <details><summary>Qual é a diferença entre ao vivo e à distância?</summary><p>Ao vivo, estamos juntos online, em direto pelo Zoom. À distância, faço a sessão por ti sem estarmos em chamada e envio-te depois o que foi feito e o que recebi. As sessões à distância podem ser mais curtas.</p></details>
+    <details><summary>Posso pedir uma sessão para outra pessoa?</summary><p>Sim. A Cura acontece noutras dimensões e também no plano físico, e pode ser feita para um familiar, um amigo ou um animal, à distância.</p></details>
+    <details><summary>Quantas sessões vou precisar?</summary><p>Depende de cada pessoa e situação. Uma sessão já ajuda muito. Nas sessões temáticas, entre 3 e 5 sessões, distribuídas por vários membros da família, resolvem a maioria das situações.</p></details>
+    <details><summary>Que sessão escolho?</summary><p>Se não sabes, começa por uma sessão geral de Divine Presence Healing®. Ou escreve-me e descobrimos juntos qual é o melhor caminho para ti.</p></details>
+    <details><summary>Como marco e pago uma sessão?</summary><p>Toca em "Marcar sessão": abre-se uma conversa comigo no WhatsApp e combinamos a data. Podes pagar por MB WAY ou transferência; cartão ou PayPal, a pedido.</p></details>
+    <details><summary>Isto substitui tratamento médico ou psicológico?</summary><p>Não. É um trabalho espiritual, complementar. Não interrompas nenhum tratamento nem acompanhamento.</p></details>
+  </section>
+
+  <section id="marcar">
+    <div class="cta">
+      <div class="eyebrow">O Próximo Passo</div>
+      <h2 style="margin:10px 0 8px">A Luz não te pede perfeição. Pede-te Verdade.</h2>
+      <p class="lead">Escreve-me e escolhemos juntos a sessão certa para ti.</p>
+      <a class="btn" data-s="" href="#">Falar com o João</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="sig">Um Abraço de Luz, João</div>
+    <p class="meta">João Carlos Paliteiro – Canal da Luz Divina<br>Criador de Divine Presence Healing® e Divine Light Mentoring®<br>Instagram @joao_carlos_paliteiro</p>
+    <p class="meta">Trabalho espiritual de natureza complementar. Não substitui diagnóstico nem tratamento médico ou psicológico, nem garante resultados específicos.</p>
+    <p class="meta">© João Carlos Paliteiro · Todos os direitos reservados.</p>
+  </footer>
+</div>
+
+<script>
+/* Marcação só por WhatsApp, com a sessão já escrita na mensagem. */
+const WHATS = "351933416434";
+const wa = t => "https://wa.me/" + WHATS + "?text=" + encodeURIComponent(t);
+document.querySelectorAll("[data-s]").forEach(a=>{
+  const s = a.dataset.s;
+  a.href = wa(s ? "Olá João! Gostava de marcar uma sessão de " + s + "." : "Olá João! Gostava de saber que sessão é a melhor para mim.");
+  a.target = "_blank"; a.rel = "noopener";
+});
+</script>
+
+</body>
+</html>
