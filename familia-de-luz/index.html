@@ -3,254 +3,224 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Família de Luz · Sessão de Divine Presence Healing®</title>
-<meta name="description" content="Família de Luz: uma sessão de Divine Presence Healing® para toda a tua família, a que está aqui, a que já partiu e a que há de vir. Em todas as dimensões e em todos os tempos. Com João Carlos Paliteiro.">
+<title>Família de Luz · Divine Presence Healing®</title>
+<meta name="description" content="Família de Luz: uma Sessão Completa de Divine Presence Healing® para a tua Egrégora Familiar. Os teus Guias Divinos mostram o que está pronto para ser curado. Com João Carlos Paliteiro.">
 <meta property="og:title" content="Família de Luz · João Carlos Paliteiro">
-<meta property="og:description" content="Nós somos uma família. A partir de ti, nasce uma nova linhagem.">
+<meta property="og:description" content="Quando uma alma se abre à Luz, a família inteira respira.">
 <meta property="og:locale" content="pt_PT">
-<meta name="theme-color" content="#FFF8EA">
+<meta name="theme-color" content="#FFF7EE">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@500;600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-/* Família de Luz v2 · marca pessoal (Faixa A): luz dourada, rosa, sálvia, azul-céu e lilás sobre marfim luminoso.
-   Sessão DPH geral e abrangente, distinta das temáticas (ex.: Superando o Luto). */
+/* Família de Luz v3 · marca pessoal (Faixa A). Aurora: pérola, pêssego, rosa-luz e céu da manhã.
+   Sessão Completa de DPH para a Egrégora Familiar; o conteúdo depende do que os Guias agendam. */
 :root{
-  --ivory:#FFFBF2; --pearl:#FFFFFF; --sun:#F6E2B5; --gold:#C9A063; --gold-deep:#9C7A2E;
-  --rose:#D4868A; --sage:#6F9E78; --sky:#6E9FC9; --lilac:#A98FBF;
-  --ink:#2E2A3F; --ink-soft:#5C5568; --line:#EFE3CB;
+  --pearl:#FFFDF8; --dawn:#FFF3E6; --peach:#F9D9C2; --rose:#E8A9A6; --sky:#9CC3E4; --sky-deep:#4E7FA8;
+  --gold:#D2A55E; --gold-deep:#8E6A27; --sage:#86B08E;
+  --ink:#2F2B3A; --ink-soft:#5E5768; --line:#F0E2D2;
   --serif:"Cormorant Garamond",Georgia,serif; --caps:"Cinzel",Georgia,serif; --sans:"Jost","Segoe UI",system-ui,sans-serif;
 }
 *{box-sizing:border-box}
 html,body{margin:0}
-body{font-family:var(--sans);font-size:18px;line-height:1.65;color:var(--ink);background:var(--ivory);
-  background-image:
-    radial-gradient(ellipse 70% 45% at 50% -5%, rgba(246,226,181,.9), transparent 70%),
-    radial-gradient(ellipse 45% 35% at 95% 30%, rgba(212,134,138,.16), transparent 70%),
-    radial-gradient(ellipse 45% 35% at 0% 55%, rgba(110,159,201,.15), transparent 70%),
-    radial-gradient(ellipse 50% 35% at 90% 85%, rgba(111,158,120,.14), transparent 70%);
-  -webkit-font-smoothing:antialiased}
-a{color:var(--gold-deep)}
-.wrap{max-width:860px;margin:0 auto;padding:0 16px}
-section{padding:56px 0}
-.eyebrow{font-family:var(--caps);font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);text-align:center;margin:0 0 14px}
-h2{font-family:var(--serif);font-weight:500;font-size:clamp(32px,6vw,46px);line-height:1.12;text-align:center;margin:0 0 18px;color:var(--ink)}
-.lead{font-family:var(--serif);font-size:clamp(20px,3.2vw,24px);line-height:1.5;color:var(--ink-soft);text-align:center;max-width:640px;margin:0 auto}
+body{font-family:var(--sans);font-size:18px;line-height:1.7;color:var(--ink);background:var(--pearl);-webkit-font-smoothing:antialiased}
+a{color:var(--sky-deep)}
+.wrap{max-width:780px;margin:0 auto;padding:0 16px}
 
-/* Hero */
-.hero{text-align:center;padding:48px 0 24px}
-.roda{width:min(320px,78vw);height:auto;display:block;margin:0 auto 8px;filter:drop-shadow(0 18px 40px rgba(201,160,99,.35))}
+/* Aurora */
+.aurora{position:relative;overflow:hidden;text-align:center;padding:54px 0 70px;
+  background:
+    radial-gradient(ellipse 60% 55% at 50% 38%, rgba(255,255,255,1), rgba(255,255,255,0) 70%),
+    radial-gradient(ellipse 80% 60% at 15% 10%, rgba(249,217,194,.9), transparent 70%),
+    radial-gradient(ellipse 70% 60% at 90% 15%, rgba(156,195,228,.55), transparent 70%),
+    radial-gradient(ellipse 60% 50% at 70% 95%, rgba(232,169,166,.35), transparent 70%),
+    linear-gradient(180deg,#FFF1E4,#FFFDF8 85%)}
+.stars{width:min(360px,86vw);height:auto;display:block;margin:0 auto 6px}
 @media (prefers-reduced-motion:no-preference){
-  .roda .p1{animation:breathe 7s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
-  .roda .p2{animation:breathe 7s ease-in-out infinite -2.3s;transform-origin:center;transform-box:fill-box}
-  .roda .core{animation:glow 9s ease-in-out infinite;transform-origin:center;transform-box:fill-box}
-  .roda .orbit{animation:spin 120s linear infinite;transform-origin:200px 200px}
+  .stars .tw{animation:tw 6s ease-in-out infinite}
+  .stars .tw:nth-child(2n){animation-delay:-2s}.stars .tw:nth-child(3n){animation-delay:-4s}
+  .stars .heart{animation:pulse 8s ease-in-out infinite;transform-origin:180px 170px}
 }
-@keyframes breathe{0%,100%{opacity:.75;transform:scale(.94)}50%{opacity:1;transform:scale(1.06)}}
-@keyframes glow{0%,100%{opacity:.9}50%{opacity:1;transform:scale(1.04)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(52px,12vw,92px);line-height:1;margin:6px 0 14px;color:var(--ink)}
-.hero .sub{font-family:var(--serif);font-size:clamp(21px,3.6vw,27px);line-height:1.45;color:var(--ink-soft);max-width:620px;margin:0 auto 26px}
-.btn{display:inline-block;font-family:var(--sans);font-weight:600;font-size:18px;color:#2E2A3F;text-decoration:none;
-  background:linear-gradient(120deg,#FBE9C2,#E9C77F 55%,#D9AE62);border-radius:999px;padding:16px 30px;box-shadow:0 14px 34px -14px rgba(156,122,46,.6)}
+@keyframes tw{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes pulse{0%,100%{transform:scale(.96)}50%{transform:scale(1.05)}}
+.eyebrow{font-family:var(--caps);font-weight:600;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 12px}
+h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(54px,12vw,96px);line-height:1;margin:4px 0 16px}
+.tag{font-family:var(--serif);font-size:clamp(23px,4vw,31px);line-height:1.35;color:var(--ink);max-width:560px;margin:0 auto 26px}
+.btn{display:inline-block;font-weight:600;font-size:18px;color:#fff;text-decoration:none;border-radius:999px;padding:16px 30px;
+  background:linear-gradient(120deg,#5E8DB8,#7C6FB0 55%,#C27F95);box-shadow:0 16px 36px -16px rgba(78,127,168,.7)}
 .btn:hover{transform:translateY(-1px)}
-.hint{font-size:15px;color:var(--ink-soft);margin:12px 0 0}
+.hint{font-size:15.5px;color:var(--ink-soft);margin:12px 0 0}
 
-/* Passagem */
-.passage{max-width:640px;margin:0 auto;text-align:center}
-.passage p{margin:0 0 20px;font-size:19px;color:var(--ink-soft)}
-.passage .rev{font-family:var(--serif);font-style:italic;font-size:clamp(26px,4.6vw,34px);line-height:1.35;color:var(--ink);margin:30px 0 8px}
-.passage .by{font-family:var(--caps);font-size:13.5px;letter-spacing:.14em;color:var(--gold-deep);margin:0 0 30px}
+section{padding:58px 0}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(32px,6vw,44px);line-height:1.15;text-align:center;margin:0 0 16px}
+.center{text-align:center}
+.eyebrow.center{display:block}
 
-/* Três linhagens */
-.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}
-.lin{background:rgba(255,255,255,.82);border:1px solid var(--line);border-radius:22px;padding:26px 22px;text-align:center;box-shadow:0 18px 40px -30px rgba(46,42,63,.35)}
-.lin .dot{width:54px;height:54px;border-radius:50%;margin:0 auto 14px}
-.lin h3{font-family:var(--serif);font-weight:600;font-size:25px;margin:0 0 8px}
-.lin p{margin:0;font-size:16.5px;color:var(--ink-soft)}
-.d-ter{background:radial-gradient(circle at 40% 35%,#fff,#F3C9C4 45%,var(--rose))}
-.d-cos{background:radial-gradient(circle at 40% 35%,#fff,#C9DCF0 45%,var(--sky) 75%,var(--lilac))}
-.d-div{background:radial-gradient(circle at 40% 35%,#fff,var(--sun) 45%,var(--gold))}
+/* Carta */
+.letter p{font-size:19px;color:var(--ink-soft);margin:0 0 20px}
+.letter .big{font-family:var(--serif);font-size:clamp(25px,4.4vw,32px);line-height:1.35;color:var(--ink);text-align:center;margin:34px 0}
+.letter .q{font-family:var(--serif);font-style:italic;font-size:clamp(25px,4.4vw,32px);line-height:1.35;text-align:center;color:var(--ink);margin:36px 0 6px}
+.letter .by{font-family:var(--caps);font-size:13.5px;letter-spacing:.14em;text-align:center;color:var(--gold-deep);margin:0}
 
-/* Sem fronteiras */
-.multi{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:30px}
-.m{display:flex;gap:16px;align-items:flex-start;background:var(--pearl);border-radius:20px;padding:22px;border:1px solid var(--line)}
-.m .ic{flex:0 0 46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:22px;color:#fff}
-.m h3{font-family:var(--caps);font-weight:600;font-size:15px;letter-spacing:.1em;text-transform:uppercase;margin:2px 0 6px;color:var(--ink)}
-.m p{margin:0;font-size:16.5px;color:var(--ink-soft)}
-.i1{background:linear-gradient(135deg,#E9C77F,var(--gold))}.i2{background:linear-gradient(135deg,#F0B4B5,var(--rose))}
-.i3{background:linear-gradient(135deg,#9FC8A6,var(--sage))}.i4{background:linear-gradient(135deg,#C9B7DD,var(--lilac))}
-.i5{background:linear-gradient(135deg,#A9C9E6,var(--sky))}.i6{background:linear-gradient(135deg,#2E2A3F,#5B4C8A)}
+/* Como decorre */
+.steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:14px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:18px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:56px;height:56px;border-radius:50%;font-family:var(--serif);font-size:28px;color:#fff;
+  background:radial-gradient(circle at 35% 30%,#fff 0,#F6D9A8 25%,var(--gold) 80%)}
+.steps li:nth-child(2)::before{background:radial-gradient(circle at 35% 30%,#fff 0,#C9DFF2 25%,var(--sky-deep) 85%)}
+.steps li:nth-child(3)::before{background:radial-gradient(circle at 35% 30%,#fff 0,#F3C3C1 25%,#C27F95 85%)}
+.steps h3{font-family:var(--serif);font-weight:600;font-size:24px;margin:2px 0 4px}
+.steps p{margin:0;font-size:17px;color:var(--ink-soft)}
 
-/* Três tempos */
-.times{display:grid;gap:16px;margin-top:30px}
-.time{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start;background:rgba(255,255,255,.75);border-radius:22px;padding:24px;border-left:4px solid var(--gold)}
-.time:nth-child(2){border-left-color:var(--rose)}.time:nth-child(3){border-left-color:var(--sky)}
-.time .k{font-family:var(--serif);font-style:italic;font-size:26px;line-height:1.15;color:var(--ink)}
-.time ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
-.time li{position:relative;padding-left:22px;font-size:17px;color:var(--ink-soft)}
-.time li::before{content:"✦";position:absolute;left:0;top:2px;font-size:12px;color:var(--gold)}
+/* Possibilidades */
+.maybe{background:linear-gradient(160deg,#F2F8FD,#FFF6EE 55%,#FDF0EF);border-radius:28px;padding:40px clamp(20px,5vw,44px)}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:22px 0 24px}
+.chips span{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:16px;color:var(--ink)}
+.maybe .note{font-family:var(--serif);font-style:italic;font-size:22px;line-height:1.45;text-align:center;color:var(--ink);margin:0}
 
 /* Diferença */
-.diff{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
-.diff div{border-radius:20px;padding:22px;background:var(--pearl);border:1px solid var(--line)}
-.diff .us{background:linear-gradient(140deg,#FFF6E2,#FDEDEE 60%,#EEF5F0);border-color:#EBD6A8}
-.diff h3{font-family:var(--serif);font-weight:600;font-size:23px;margin:0 0 6px}
-.diff p{margin:0;font-size:16.5px;color:var(--ink-soft)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:24px}
+.vs div{border-radius:20px;padding:22px;background:#fff;border:1px solid var(--line)}
+.vs .on{border-color:#E7C79A;background:linear-gradient(150deg,#FFF8EC,#fff)}
+.vs h3{font-family:var(--serif);font-weight:600;font-size:23px;margin:0 0 4px}
+.vs p{margin:0;font-size:16.5px;color:var(--ink-soft)}
 
-/* Cartão de marcação */
-.book{background:var(--pearl);border-radius:28px;padding:36px clamp(20px,5vw,48px);text-align:center;border:1px solid #EBD6A8;
-  box-shadow:0 30px 60px -36px rgba(156,122,46,.55);position:relative;overflow:hidden}
-.book::before{content:"";position:absolute;inset:-40% -20% auto;height:70%;background:radial-gradient(closest-side,rgba(246,226,181,.7),transparent);pointer-events:none}
-.book>*{position:relative}
-.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 26px;margin:18px 0 22px;font-size:17px}
-.facts b{font-family:var(--caps);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep);display:block}
-.price{font-family:var(--serif);font-size:58px;line-height:1;margin:6px 0 4px;color:var(--ink)}
+/* Marcar */
+.book{text-align:center;background:#fff;border-radius:30px;padding:40px clamp(20px,5vw,48px);border:1px solid #EAD3B2;box-shadow:0 30px 60px -38px rgba(142,106,39,.55)}
+.facts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;margin:6px 0 20px;font-size:17px}
+.facts b{display:block;font-family:var(--caps);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-deep)}
+.price{font-family:var(--serif);font-size:58px;line-height:1;margin:4px 0 20px}
 .price small{font-family:var(--sans);font-size:16px;color:var(--ink-soft)}
-.vale{display:inline-block;margin:16px 0 24px;font-size:16.5px;background:linear-gradient(120deg,#FDECEC,#FFF4DC);border-radius:999px;padding:10px 20px}
 .alt{font-size:15.5px;color:var(--ink-soft);margin:14px 0 0}
+.aluno{font-size:15.5px;color:var(--ink-soft);margin:18px 0 0}
 
 /* FAQ */
-.faq{max-width:700px;margin:0 auto}
 .faq details{border-top:1px solid var(--line);padding:16px 0}
 .faq summary{cursor:pointer;font-weight:600;font-size:18px;list-style:none}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::before{content:"+";color:var(--gold);font-weight:700;display:inline-block;width:1.2em}
 .faq details[open] summary::before{content:"–"}
-.faq p{margin:10px 0 0;color:var(--ink-soft);font-size:17px}
+.faq p{margin:10px 0 0;font-size:17px;color:var(--ink-soft)}
 
-footer{text-align:center;padding:30px 0 56px;color:var(--ink-soft);font-size:15px}
+footer{text-align:center;padding:24px 0 56px;font-size:15px;color:var(--ink-soft)}
 footer .sig{font-family:var(--serif);font-style:italic;font-size:24px;color:var(--ink);margin:4px 0}
-footer .who{font-family:var(--caps);font-size:13.5px;letter-spacing:.14em;color:var(--gold-deep);text-transform:uppercase}
-footer .legal{font-size:13.5px;margin-top:16px;opacity:.85}
+footer .who{font-family:var(--caps);font-size:13.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 14px}
+footer .dph{font-family:var(--serif);font-style:italic;font-size:18px;margin:0 0 10px}
 
-@media (max-width:720px){
-  .three,.multi,.diff{grid-template-columns:1fr}
-  .time{grid-template-columns:1fr;gap:8px}
-  section{padding:44px 0}
-}
+@media (max-width:680px){ .vs{grid-template-columns:1fr} .steps li{grid-template-columns:44px 1fr;gap:14px} .steps li::before{width:44px;height:44px;font-size:23px} section{padding:46px 0} }
 </style>
 </head>
 <body>
+
+<header class="aurora">
+  <div class="wrap">
+    <!-- Constelação: almas da família ligadas por fios de luz, à volta de um coração de luz -->
+    <svg class="stars" viewBox="0 0 360 300" role="img" aria-label="Constelação de luzes ligadas por fios dourados à volta de uma luz central">
+      <defs>
+        <radialGradient id="h"><stop offset="0" stop-color="#fff"/><stop offset=".4" stop-color="#FCE6BF"/><stop offset="1" stop-color="#F2C98A" stop-opacity="0"/></radialGradient>
+        <radialGradient id="st"><stop offset="0" stop-color="#fff"/><stop offset=".45" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+      </defs>
+      <g stroke="#D2A55E" stroke-opacity=".55" stroke-width="1.1" fill="none">
+        <path d="M180 170 L92 96 L46 160 L92 230 L180 170 L268 96 L314 160 L268 230 L180 170 L180 42 M92 96 L180 42 L268 96 M92 230 L180 272 L268 230"/>
+      </g>
+      <circle class="heart" cx="180" cy="170" r="62" fill="url(#h)"/>
+      <g>
+        <circle class="tw" cx="180" cy="42" r="9" fill="#F2C98A"/>
+        <circle class="tw" cx="92" cy="96" r="8" fill="#E8A9A6"/>
+        <circle class="tw" cx="268" cy="96" r="8" fill="#9CC3E4"/>
+        <circle class="tw" cx="46" cy="160" r="7" fill="#B9A6D8"/>
+        <circle class="tw" cx="314" cy="160" r="7" fill="#86B08E"/>
+        <circle class="tw" cx="92" cy="230" r="8" fill="#9CC3E4"/>
+        <circle class="tw" cx="268" cy="230" r="8" fill="#E8A9A6"/>
+        <circle class="tw" cx="180" cy="272" r="9" fill="#F2C98A"/>
+        <circle class="tw" cx="30" cy="40" r="2.5" fill="#D2A55E"/><circle class="tw" cx="332" cy="30" r="2" fill="#9CC3E4"/>
+        <circle class="tw" cx="340" cy="262" r="2.5" fill="#E8A9A6"/><circle class="tw" cx="22" cy="270" r="2" fill="#86B08E"/>
+      </g>
+      <circle cx="180" cy="170" r="16" fill="url(#st)"/>
+    </svg>
+    <p class="eyebrow">Divine Presence Healing® · Sessão Completa</p>
+    <h1>Família de Luz</h1>
+    <p class="tag">Quando uma alma se abre à Luz,<br>a família inteira respira.</p>
+    <a class="btn" data-book href="#">Pedir a minha Sessão Família de Luz</a>
+    <p class="hint">Até 2 horas · ao vivo no Zoom · para ti e para a tua Egrégora Familiar</p>
+  </div>
+</header>
+
 <main class="wrap">
 
-  <header class="hero">
-    <svg class="roda" viewBox="0 0 400 400" role="img" aria-label="Roda de luzes à volta de uma luz central: a família em Unidade">
-      <defs>
-        <radialGradient id="c"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#FBEBC4"/><stop offset=".75" stop-color="#E2B66E" stop-opacity=".55"/><stop offset="1" stop-color="#E2B66E" stop-opacity="0"/></radialGradient>
-        <radialGradient id="r"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#E9A2A5"/><stop offset="1" stop-color="#D4868A" stop-opacity="0"/></radialGradient>
-        <radialGradient id="g"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#94C49D"/><stop offset="1" stop-color="#6F9E78" stop-opacity="0"/></radialGradient>
-        <radialGradient id="s"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#93BCE2"/><stop offset="1" stop-color="#6E9FC9" stop-opacity="0"/></radialGradient>
-        <radialGradient id="l"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#C6B1DE"/><stop offset="1" stop-color="#A98FBF" stop-opacity="0"/></radialGradient>
-      </defs>
-      <g class="orbit">
-        <circle cx="200" cy="200" r="168" fill="none" stroke="#C9A063" stroke-opacity=".35" stroke-dasharray="2 7"/>
-        <circle cx="200" cy="32" r="5" fill="#E2B66E"/><circle cx="368" cy="200" r="4" fill="#A98FBF"/><circle cx="200" cy="368" r="5" fill="#6E9FC9"/><circle cx="32" cy="200" r="4" fill="#D4868A"/>
-      </g>
-      <circle cx="200" cy="200" r="130" fill="none" stroke="#C9A063" stroke-opacity=".6" stroke-width="1.4"/>
-      <circle cx="200" cy="200" r="80" fill="none" stroke="#C9A063" stroke-opacity=".4"/>
-      <g class="p1"><circle cx="200" cy="70" r="34" fill="url(#r)"/><circle cx="330" cy="200" r="34" fill="url(#g)"/><circle cx="200" cy="330" r="34" fill="url(#s)"/><circle cx="70" cy="200" r="34" fill="url(#l)"/></g>
-      <g class="p2"><circle cx="292" cy="108" r="34" fill="url(#s)"/><circle cx="292" cy="292" r="34" fill="url(#r)"/><circle cx="108" cy="292" r="34" fill="url(#g)"/><circle cx="108" cy="108" r="34" fill="url(#l)"/></g>
-      <circle class="core" cx="200" cy="200" r="86" fill="url(#c)"/>
-    </svg>
-    <p class="eyebrow">Divine Presence Healing® · Sessão para a família</p>
-    <h1>Família de Luz</h1>
-    <p class="sub">Uma sessão para toda a tua família: a que está aqui, a que já partiu e a que há de vir. Em todas as dimensões e em todos os tempos.</p>
-    <a class="btn" data-book href="#">Quero a minha Sessão Família de Luz ✨</a>
-    <p class="hint">Até 2 horas · ao vivo no Zoom · com João Carlos Paliteiro</p>
-  </header>
-
-  <section class="passage" aria-label="Convite">
-    <p>Ninguém chega sozinho a esta vida. Chegaste por uma mãe e por um pai, por avós que talvez não conheceste, por gerações que viveram, amaram, sofreram e prometeram coisas que ainda hoje ecoam em ti.</p>
-    <p>Procuramos fora a paz que falta em casa. Tentamos mudar o pai, a mãe, o filho, o companheiro… E a história repete-se. Porque a família não é só quem está à mesa: é um Campo vivo, tecido de almas, de tempos e de mundos.</p>
-    <p class="rev">“Nós somos os antepassados das gerações futuras. A partir de mim, dou à luz toda uma nova linhagem.”</p>
+  <section class="letter" aria-label="Convite">
+    <p>Há famílias que se amam muito e, mesmo assim, não se conseguem ouvir. Há casas onde a tristeza parece passar de mão em mão. Há uma dor antiga que ninguém sabe de onde vem… e que todos carregam.</p>
+    <p>Cada família é uma Egrégora: um Campo vivo, feito das almas que a compõem, dos que já partiram e dos que ainda vão chegar. Esse Campo guarda Amor, guarda memórias e, às vezes, fica preso num momento antigo, como se tivesse parado no tempo.</p>
+    <p class="big">Não precisas de mudar ninguém.<br>Basta que tu abras a porta.</p>
+    <p>Ao longo de mais de vinte anos de sessões, vi uma e outra vez como a Luz que entra numa pessoa encontra o caminho até aos seus. É para isso que existe a Família de Luz: uma Sessão Completa de Divine Presence Healing® em que levamos a tua família à Presença de Deus e deixamos que os teus Guias Divinos mostrem o que hoje está pronto para ser curado.</p>
+    <p class="q">“Na Luz Divina está tudo o que precisas.”</p>
     <p class="by">— João Carlos Paliteiro —</p>
-    <p>Na Sessão Família de Luz levamos a tua família inteira à Presença Divina. Não um tema: todos. Não uma pessoa: todas. Para que a Ordem Divina volte à tua casa, às tuas relações e à tua linhagem.</p>
   </section>
 
-  <section aria-labelledby="t-lin">
-    <p class="eyebrow">De onde vens</p>
-    <h2 id="t-lin">Três linhagens, uma só Família</h2>
-    <p class="lead">Estamos ligados a três linhagens. Nesta sessão, todas elas entram na Luz.</p>
-    <div class="three">
-      <div class="lin"><div class="dot d-ter"></div><h3>Terrena</h3><p>Pais, avós, antepassados, filhos e netos. O sangue, a casa e as histórias que herdaste.</p></div>
-      <div class="lin"><div class="dot d-cos"></div><h3>Cósmica</h3><p>As tuas famílias de alma, estelares, interestelares e angélicas. Os que caminham contigo para além desta Terra.</p></div>
-      <div class="lin"><div class="dot d-div"></div><h3>Divina</h3><p>A Linhagem que nos une a todos em Deus. A tua origem mais verdadeira, onde todas as almas são inocentes.</p></div>
+  <section aria-labelledby="t-como">
+    <p class="eyebrow center">Como decorre</p>
+    <h2 id="t-como">Uma sessão guiada, não um programa</h2>
+    <ol class="steps">
+      <li><div><h3>Partilhas o teu pedido</h3><p>Contas-me o que te pesa na família, o que desejas para ela e quem queres incluir: os que estão perto, os que estão longe e os que já partiram.</p></div></li>
+      <li><div><h3>Os teus Guias mostram o caminho</h3><p>Abrimos a sessão na Presença Divina e recebo a Orientação dos teus Guias: o que está agendado para hoje, em que pessoas, em que tempos e em que dimensões. Pode ser um só tema ou vários; uma relação ou várias gerações.</p></div></li>
+      <li><div><h3>A Luz faz o trabalho</h3><p>A Cura acontece sem fronteiras nem barreiras de tempo, de espaço ou de dimensão, ao ritmo da tua alma e das almas da tua família, sempre com respeito pelo livre-arbítrio de cada uma.</p></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="t-pode">
+    <div class="maybe">
+      <p class="eyebrow center">O que pode surgir</p>
+      <h2 id="t-pode">Cada sessão é única</h2>
+      <p class="center" style="color:var(--ink-soft);margin:0">Conforme o que os teus Guias agendarem, a sessão pode tocar, por exemplo:</p>
+      <div class="chips">
+        <span>uma relação que pede Paz</span><span>quem já partiu</span><span>um padrão que se repete</span>
+        <span>a Proteção da família e da casa</span><span>memórias de outras vidas</span>
+        <span>a linhagem feminina ou masculina</span><span>laços de alma e origens estelares</span><span>as gerações que virão</span>
+      </div>
+      <p class="note">Não se cura tudo numa sessão.<br>Cura-se o que, hoje, está pronto para voltar à Luz.</p>
     </div>
   </section>
 
-  <section aria-labelledby="t-multi">
-    <p class="eyebrow">Uma sessão sem fronteiras</p>
-    <h2 id="t-multi">Tudo o que a tua família é, numa só sessão</h2>
-    <p class="lead">A Família de Luz é uma sessão de Divine Presence Healing® geral e abrangente. A Luz vai onde for preciso.</p>
-    <div class="multi">
-      <div class="m"><div class="ic i1">✦</div><div><h3>Multi-temas</h3><p>Relações, saúde, abundância, conflitos, segredos, despedidas. Tudo o que pesa na família, ao mesmo tempo.</p></div></div>
-      <div class="m"><div class="ic i2">❤</div><div><h3>Multi-pessoas</h3><p>Tu e todos os teus: pais, filhos, irmãos, casal, as famílias que se juntam pelo casamento.</p></div></div>
-      <div class="m"><div class="ic i3">❋</div><div><h3>Multi-gerações</h3><p>Dos antepassados mais antigos às gerações que ainda vão nascer. Padrões que se cortam na raiz.</p></div></div>
-      <div class="m"><div class="ic i4">◎</div><div><h3>Multi-dimensões</h3><p>Os que estão nesta dimensão e os que já partiram. O Amor não acaba quando o corpo parte.</p></div></div>
-      <div class="m"><div class="ic i5">∞</div><div><h3>Multi-linhas de tempo</h3><p>Passado, presente e futuro, e as linhas paralelas. Contratos e laços de outras vidas.</p></div></div>
-      <div class="m"><div class="ic i6">✧</div><div><h3>Famílias cósmicas</h3><p>As tuas origens estelares e interestelares, e os seres cósmicos e angélicos da tua linhagem.</p></div></div>
-    </div>
-  </section>
-
-  <section aria-labelledby="t-times">
-    <p class="eyebrow">O que pode ser curado</p>
-    <h2 id="t-times">Os que vieram antes, os que caminham connosco e os que virão</h2>
-    <div class="times">
-      <div class="time"><div class="k">Os que vieram antes</div><ul>
-        <li>Honrar os antepassados sem carregar o que é deles</li>
-        <li>Libertação e ascensão de antepassados</li>
-        <li>Despedidas e palavras que ficaram por dizer</li></ul></div>
-      <div class="time"><div class="k">Os que caminham connosco</div><ul>
-        <li>Pais e filhos: o que recebeste, o que te faltou, o que já podes agradecer</li>
-        <li>O casal e as famílias que se juntam</li>
-        <li>Sair da culpa e da vítima. Amar e perdoar, mesmo sem conviver</li></ul></div>
-      <div class="time"><div class="k">Os que virão</div><ul>
-        <li>Padrões, crenças e programações que atravessam gerações</li>
-        <li>Limpeza das matrizes familiares, laços e contratos</li>
-        <li>Bênção das gerações futuras: ser fonte de água limpa para quem vem</li></ul></div>
-    </div>
-  </section>
-
-  <section aria-labelledby="t-diff">
-    <p class="eyebrow">Para escolheres bem</p>
-    <h2 id="t-diff">Uma sessão temática ou a Família de Luz?</h2>
-    <div class="diff">
-      <div><h3>Sessão temática</h3><p>Até 1 hora, um só tema, em profundidade. Por exemplo, <a href="https://jcpaliteiro.github.io/superando-o-luto/" target="_blank" rel="noopener">Superando o Luto</a> ou a Relação com a Mãe ou com o Pai.</p></div>
-      <div class="us"><h3>Família de Luz</h3><p>Até 2 horas, todos os temas, todas as pessoas, todas as gerações, dimensões e linhas de tempo. A família inteira, de uma vez.</p></div>
+  <section aria-labelledby="t-vs">
+    <p class="eyebrow center">Para escolheres bem</p>
+    <h2 id="t-vs">Temática ou Família de Luz?</h2>
+    <div class="vs">
+      <div><h3>Sessão temática</h3><p>Até 1 hora, um só tema, em profundidade. Por exemplo, <a href="https://jcpaliteiro.github.io/superando-o-luto/" target="_blank" rel="noopener">Superando o Luto</a> ou a relação com a Mãe ou com o Pai.</p></div>
+      <div class="on"><h3>Família de Luz</h3><p>Até 2 horas, uma Sessão Completa, aberta a tudo o que os teus Guias trouxerem para a tua família.</p></div>
     </div>
   </section>
 
   <section id="marcar" aria-labelledby="t-book">
     <div class="book">
-      <p class="eyebrow">Marcar a tua sessão</p>
-      <h2 id="t-book">A partir de ti, nasce uma nova linhagem</h2>
+      <p class="eyebrow">Marcar</p>
+      <h2 id="t-book">Que a Luz que entra em ti chegue a todos os teus</h2>
       <div class="facts">
         <span><b>Duração</b>até 2 horas</span>
         <span><b>Formato</b>ao vivo no Zoom</span>
-        <span><b>Para quem</b>tu e toda a tua família</span>
+        <span><b>Para quem</b>tu e a tua família</span>
       </div>
-      <p class="price">222€ <small>sessão única</small></p>
-      <p class="vale">Alunos do Curso <a href="https://linhagem.joaopaliteiro.com/" target="_blank" rel="noopener">NÓS SOMOS · Linhagem Divina</a>: 50% com o vale-bónus</p>
-      <div><a class="btn" data-book href="#">Quero a minha Sessão Família de Luz ✨</a></div>
+      <p class="price">222€ <small>Sessão Completa</small></p>
+      <a class="btn" data-book href="#">Pedir a minha Sessão Família de Luz</a>
       <p class="alt">Respondo-te pessoalmente, com todo o carinho. Preferes email? <a data-mail href="#">Escreve-me aqui</a> · <a href="https://terapias.joaopaliteiro.com/">Ver todas as terapias</a></p>
+      <p class="aluno">Aluno do Curso <a href="https://linhagem.joaopaliteiro.com/" target="_blank" rel="noopener">NÓS SOMOS</a>? O teu vale-bónus dá 50% nesta sessão.</p>
     </div>
   </section>
 
   <section class="faq" aria-labelledby="t-faq">
     <h2 id="t-faq">Perguntas Frequentes</h2>
-    <details><summary>Os meus familiares precisam de estar presentes?</summary><p>Não. Basta estares tu. Os teus familiares são incluídos no trabalho, estejam nesta dimensão ou já noutra, perto ou longe.</p></details>
-    <details><summary>Preciso de ter feito o Curso NÓS SOMOS?</summary><p>Não. A sessão é para todos. Quem fez o Curso tem 50% com o vale-bónus, e a sessão aprofunda, para a tua família em particular, o que viveste no Curso.</p></details>
-    <details><summary>Posso pedir a sessão para outra pessoa da família?</summary><p>Sim. Podes pedi-la em nome de um familiar, com todo o respeito pelo livre-arbítrio de cada alma.</p></details>
+    <details><summary>Os meus familiares precisam de estar presentes?</summary><p>Não. Basta estares tu. Os teus familiares são incluídos no trabalho, estejam perto ou longe, nesta dimensão ou já noutra.</p></details>
+    <details><summary>Quantas sessões são necessárias?</summary><p>Depende de cada família. Uma só sessão já ajuda muito. Por vezes, algumas sessões distribuídas por várias pessoas da família ajudam a Egrégora Familiar a reencontrar a sua Ordem Divina.</p></details>
+    <details><summary>Posso pedir a sessão em nome de um familiar?</summary><p>Sim, sempre com respeito pelo livre-arbítrio de cada alma.</p></details>
     <details><summary>Esta sessão substitui acompanhamento psicológico ou médico?</summary><p>Não. É um trabalho espiritual complementar e não substitui o acompanhamento psicológico, médico ou terapêutico.</p></details>
   </section>
 
   <footer>
+    <p class="dph">Divine Presence Healing® · Manifestando a tua Essência Divina, Aqui e Agora!</p>
     <p>+22 anos de experiência · +16.000 atendimentos</p>
     <p class="sig">Com Amor, João Carlos</p>
     <p class="who">Canal da Luz Divina</p>
-    <p class="legal">© 2026 João Carlos Paliteiro. Todos os direitos reservados.</p>
+    <p>© 2004–2026 João Carlos Paliteiro. Todos os direitos reservados.</p>
   </footer>
 </main>
 <script>
