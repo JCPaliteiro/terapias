@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:url" content="https://terapias.joaopaliteiro.com/mentoria/">
+<link rel="icon" type="image/png" href="../favicon.png">
+<title>Divine Light Mentoring®</title>
+<meta name="description" content="Divine Light Mentoring® com João Carlos Paliteiro: planos de mentoria espiritual de 3 meses, com sessões regulares e acompanhamento semanal.">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_PT">
+<meta property="og:title" content="Divine Light Mentoring® · João Carlos Paliteiro">
+<meta property="og:description" content="Caminhar acompanhado: planos de mentoria de 3 meses.">
+<meta name="theme-color" content="#2E2454">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cinzel:wght@500;600&family=Jost:wght@400;500;600&display=swap">
+<style>
+/* Mentoria DLM · v1 · 27 out 2026. Mesmo esqueleto e cores da página das terapias (Faixa A). */
+:root{
+  --cream:#FBF6EC; --cream-deep:#F3EAD3; --card:#FFFFFF;
+  --ink:#2A2018; --ink-soft:#5f5446;
+  --indigo:#2E2454; --indigo-soft:#4A3B7A;
+  --gold:#C9A063; --gold-deep:#8a6a2f; --gold-soft:#F6EBD3;
+  --sky:#5E93A0; --lilac:#A98FBF; --lilac-soft:#EFE7F5;
+  --line:#E6D9BE;
+  --shadow:0 16px 40px rgba(120,90,40,.12);
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --caps:"Cinzel",Georgia,serif;
+  --sans:"Jost","Segoe UI",system-ui,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.65;background-color:var(--cream);
+  background-image:
+    radial-gradient(ellipse 900px 520px at 10% -8%, rgba(94,147,160,.12), transparent 60%),
+    radial-gradient(ellipse 800px 600px at 100% 12%, rgba(169,143,191,.12), transparent 55%),
+    linear-gradient(180deg,var(--cream),#FEFCF6 40%,var(--cream-deep))}
+.wrap{max-width:1000px;margin:0 auto;padding-left:max(22px, env(safe-area-inset-left, 0px));padding-right:max(22px, env(safe-area-inset-right, 0px));padding-block:40px 48px;display:flex;flex-direction:column;gap:48px}
+a{color:var(--indigo)}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
+.eyebrow{font-family:var(--caps);font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);text-align:center;margin:0}
+header{text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center}
+h1{font-family:var(--serif);font-style:italic;font-weight:500;font-size:clamp(2.4rem,7vw,3.6rem);line-height:1.1;color:var(--indigo);margin:0;text-wrap:balance}
+.lead{font-size:1.1rem;color:var(--ink-soft);max-width:38rem;margin:0}
+.base{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 30px;font-size:1rem;color:var(--ink-soft)}
+.base b{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:var(--indigo);margin-left:6px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:920px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:540px){.grid{grid-template-columns:1fr}}
+.pack{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px 22px;display:flex;flex-direction:column;gap:14px;box-shadow:var(--shadow)}
+.pack.top{border-color:var(--gold);background:linear-gradient(160deg,#FFF8EC,#fff 60%)}
+.n{font-family:var(--serif);font-size:2rem;font-weight:600;color:var(--indigo);line-height:1}
+.n span{display:block;font-family:var(--caps);font-size:13.5px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin-top:8px}
+.price{font-family:var(--serif);font-size:3rem;font-weight:600;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+dl{margin:0;display:flex;flex-direction:column;gap:6px;font-size:16.5px;font-variant-numeric:tabular-nums}
+dl div{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:6px}
+dt{color:var(--ink-soft)} dd{margin:0;font-weight:500}
+.for{font-size:16px;color:var(--ink-soft);margin:0}
+.gift{background:var(--gold-soft);border-radius:12px;padding:10px 12px;font-size:16px;margin:0}
+.btn{margin-top:auto;display:block;text-align:center;font-size:16px;font-weight:600;color:#FFFDF7;text-decoration:none;border-radius:999px;padding:12px 18px;background:linear-gradient(100deg,var(--indigo-soft),var(--indigo));box-shadow:0 8px 22px rgba(46,36,84,.22)}
+.btn:hover{filter:brightness(1.08)}
+.notes{background:var(--lilac-soft);border-radius:24px;padding:30px clamp(20px,4vw,36px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+@media (max-width:760px){.notes{grid-template-columns:1fr}}
+.notes h2{font-family:var(--serif);font-weight:600;font-size:1.5rem;color:var(--indigo);margin:0 0 6px}
+.notes p{margin:0;font-size:17px;color:var(--ink-soft)}
+.close{text-align:center;display:flex;flex-direction:column;align-items:center;gap:12px}
+.close blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(1.8rem,4.5vw,2.3rem);color:var(--indigo);margin:0;line-height:1.25}
+footer{text-align:center;font-size:15px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:22px;display:flex;flex-direction:column;gap:6px}
+footer .sig{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--ink);margin:0}
+footer p{margin:0}
+.inc{margin:0;padding-left:18px;font-size:16px;display:flex;flex-direction:column;gap:4px}
+.inc li::marker{color:var(--gold)}
+.lbl{font-family:var(--caps);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold-deep);margin:0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">Divine Light Mentoring® · Mentoria da Luz Divina®</p>
+    <h1>Caminhar acompanhado</h1>
+    <p class="lead">Uma mentoria espiritual de três meses para quem quer manifestar a sua Missão Divina com alguém ao lado. Sessões regulares, Cura quando é preciso e uma revisão em cada semana, para que nada do que se abre fique por integrar.</p>
+    <div class="base"><span>Sessão avulsa<b>150€</b></span><span>Sessão de Preparação<b>50€</b></span><span>até 1h30 · pelo Zoom</span></div>
+  </header>
+
+  <section class="grid" aria-label="Planos de mentoria">
+    <article class="pack">
+      <div class="n">Essencial <span>1 sessão por mês</span></div>
+      <div class="price">557€</div>
+      <dl>
+        <div><dt>Por sessão</dt><dd>≈ 139€</dd></div>
+        <div><dt>Em avulso</dt><dd>650€</dd></div>
+        <div><dt>Poupas</dt><dd>93€</dd></div>
+      </dl>
+      <p class="lbl">Inclui</p>
+      <ul class="inc">
+        <li>3 sessões de Divine Light Mentoring®</li>
+        <li>1 sessão de Divine Presence Healing®</li>
+        <li>Sessão de Preparação</li>
+        <li>Revisão semanal por chat</li>
+      </ul>
+      <p class="gift">Oferta: uma Programação Holográfica e uma meditação canalizada à tua escolha</p>
+      <p class="for">Para ganhar clareza e direção.</p>
+      <a class="btn" data-p="Essencial · 1 sessão por mês (557€)" href="#">Escolher este plano</a>
+    </article>
+    <article class="pack">
+      <div class="n">Profundo <span>2 sessões por mês</span></div>
+      <div class="price">925€</div>
+      <dl>
+        <div><dt>Por sessão</dt><dd>≈ 132€</dd></div>
+        <div><dt>Em avulso</dt><dd>1100€</dd></div>
+        <div><dt>Poupas</dt><dd>175€</dd></div>
+      </dl>
+      <p class="lbl">Inclui</p>
+      <ul class="inc">
+        <li>6 sessões de Divine Light Mentoring®</li>
+        <li>1 sessão de Divine Presence Healing®</li>
+        <li>Sessão de Preparação</li>
+        <li>Revisão semanal por chat</li>
+      </ul>
+      <p class="gift">Oferta: uma Programação Holográfica e duas meditações canalizadas à tua escolha</p>
+      <p class="for">Para transformar um tema a fundo.</p>
+      <a class="btn" data-p="Profundo · 2 sessões por mês (925€)" href="#">Escolher este plano</a>
+    </article>
+    <article class="pack top">
+      <div class="n">Iniciático <span>3 sessões por mês</span></div>
+      <div class="price">1375€</div>
+      <dl>
+        <div><dt>Por sessão</dt><dd>125€</dd></div>
+        <div><dt>Em avulso</dt><dd>1700€</dd></div>
+        <div><dt>Poupas</dt><dd>325€</dd></div>
+      </dl>
+      <p class="lbl">Inclui</p>
+      <ul class="inc">
+        <li>9 sessões de Divine Light Mentoring®</li>
+        <li>2 sessões de Divine Presence Healing®</li>
+        <li>Sessão de Preparação</li>
+        <li>Revisão semanal por chat</li>
+      </ul>
+      <p class="gift">Oferta: uma Programação Holográfica e três meditações canalizadas à tua escolha</p>
+      <p class="for">Para um salto de Frequência.</p>
+      <a class="btn" data-p="Iniciático · 3 sessões por mês (1375€)" href="#">Escolher este plano</a>
+    </article>
+  </section>
+
+  <section class="notes" aria-label="Como funciona">
+    <div><h2>Começa na Preparação</h2><p>30 minutos para olharmos os teus desafios e definirmos os objetivos, com uma meditação canalizada no momento. Está incluída em todos os planos.</p></div>
+    <div><h2>Entre sessões</h2><p>Uma revisão por semana, por escrito ou áudio, até 15 minutos: o que mudou, o que surgiu, o próximo passo. As meditações da oferta escolhes <a href="https://www.joaopaliteiro.com/portugu%C3%AAs/medita%C3%A7%C3%B5es-guiadas" target="_blank" rel="noopener">aqui</a>.</p></div>
+    <div><h2>Como reservar</h2><p>Toca em «Escolher este plano»: abre-se uma conversa comigo no WhatsApp, já com o plano escrito. Combinamos as datas e o pagamento.</p></div>
+  </section>
+
+  <section class="close">
+    <blockquote>O teu destino não é sobreviver. É ascender.</blockquote>
+    <a href="https://terapias.joaopaliteiro.com/pacotes/">Preferes só Cura? Ver os pacotes de Divine Presence Healing®</a>
+    <a href="https://terapias.joaopaliteiro.com/">Ver todas as terapias</a>
+  </section>
+
+  <footer>
+    <p class="sig">Com Amor, João Carlos</p>
+    <p>Trabalho espiritual de natureza complementar. Não substitui diagnóstico nem tratamento médico ou psicológico, nem garante resultados específicos.</p>
+    <p>© 2004–2026 João Carlos Paliteiro. Todos os direitos reservados.</p>
+  </footer>
+
+</div>
+<script>
+/* Marcação só por WhatsApp, com o plano já escrito na mensagem. */
+const WHATS = "351933416434";
+document.querySelectorAll("[data-p]").forEach(a=>{
+  a.href = "https://wa.me/" + WHATS + "?text=" + encodeURIComponent("Olá João! Gostava de fazer o plano " + a.dataset.p + " de Divine Light Mentoring®.");
+  a.target = "_blank"; a.rel = "noopener";
+});
+</script>
+</body>
+</html>
